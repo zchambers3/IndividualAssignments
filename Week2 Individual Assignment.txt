@@ -1,0 +1,9 @@
+I have provided several different options.  Please see below key.
+
+LinkedList.java = Singly linked list
+
+DoublePal.cpp = Doubly linked list
+
+DoubleLInkedListNode.java = Doubly linked list
+PaliRecurseHelper.java = Doubly linked list
+Palindrome.java = Doubly linked list
