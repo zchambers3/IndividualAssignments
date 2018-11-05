@@ -4,8 +4,7 @@
 using namespace std; 
 
 // Structure of node 
-struct Node 
-{ 
+struct Node { 
 	char data; 
 	struct Node *next; 
 	struct Node *prev; 
@@ -14,8 +13,7 @@ struct Node
 /* Given a reference (pointer to pointer) to 
 the head of a list and an int, inserts a 
 new node on the front of the list. */
-void push(struct Node** head_ref, char new_data) 
-{ 
+void push(struct Node** head_ref, char new_data) { 
 	struct Node* new_node = new Node; 
 	new_node->data = new_data; 
 	new_node->next = (*head_ref); 
@@ -26,8 +24,7 @@ void push(struct Node** head_ref, char new_data)
 } 
 
 // Function to check if list is palindrome or not 
-bool isPalindrome(struct Node *left) 
-{ 
+bool isPalindrome(struct Node *left) { 
 	if (left == NULL) 
 	return true; 
 
@@ -36,8 +33,7 @@ bool isPalindrome(struct Node *left)
 	while (right->next != NULL) 
 		right = right->next; 
 
-	while (left != right) 
-	{ 
+	while (left != right) { 
 		if (left->data != right->data) 
 			return false; 
 
@@ -49,8 +45,7 @@ bool isPalindrome(struct Node *left)
 } 
 
 // Driver program 
-int main() 
-{ 
+int main() { 
 	struct Node* head = NULL; 
 	push(&head, 'l'); 
 	push(&head, 'e'); 
