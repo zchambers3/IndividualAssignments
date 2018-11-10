@@ -11,6 +11,17 @@ public class StackSizeSearchExample {
 
         System.out.println("Stack : " + stackOfCards);
 
+        // Popping items from the Stack
+        String cardAtTop = stackOfCards.pop();  // Throws EmptyStackException if the stack is empty
+        System.out.println("Stack.pop() => " + cardAtTop);
+        System.out.println("Current Stack => " + stackOfCards);
+        System.out.println();
+
+        // Get the item at the top of the stack without removing it
+        cardAtTop = stackOfCards.peek();
+        System.out.println("Stack.peek() => " + cardAtTop);
+        System.out.println("Current Stack => " + stackOfCards);
+        
         // Check if the Stack is empty
         System.out.println("Is Stack empty? : " + stackOfCards.isEmpty());
 
